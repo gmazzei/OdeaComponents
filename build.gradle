@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.2.2'
+    
+    compile group: 'joda-time', name: 'joda-time', version:'2.1'
+    
+    compile group: 'org.apache.wicket', name: 'wicket-core', version:'6.1.0'
+    compile group: 'org.apache.wicket', name: 'wicket-extensions', version:'6.1.0'
+    
+    compile group: 'ch.qos.logback', name: 'logback-classic', version:'1.0.13'
+
+	
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    testCompile "junit:junit:4.11"
+
+}                
+
+project(':').war{
+    from (project(':OdeaComponents').file('src/main/resources/web')){
+        into('odeaComponents')
+    }
+}    

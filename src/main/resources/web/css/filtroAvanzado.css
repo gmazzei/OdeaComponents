@@ -1,0 +1,129 @@
+/* Filtro Avanzado */
+
+.filtroAvanzado {
+	float: left;
+	width: 270px;
+	display: inline-block;
+	margin: 56px 10px 0 0;
+}
+
+.filtroAvanzado #filtroAvanzado-head {
+	background: #2a79a2;
+	height: 18px
+	/* border-top-left-radius: 10px;
+	border-top-right-radius: 10px; */
+}
+
+.filtroAvanzado #filtroAvanzado-head label{
+	display: inline-block;
+	margin-left: 15px;
+	color: #ddd;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.filtroAvanzado form {
+	margin: 0;
+}
+
+.filtroAvanzado fieldset {
+	margin: 0;
+	padding: 0;
+	border: solid 1px #aaa;
+	background-color: #ccc;
+}
+
+.filtroAvanzado fieldset select {
+	width: 75%;
+	margin: 6px 0px 0px 15px;
+}
+
+.filtroAvanzado fieldset input {
+	width: 75%;
+	margin: 6px 0px 6px 15px;
+	display: inline-block;
+	padding: 1px 5px;
+}
+
+.filtroAvanzado fieldset .button, .filtroAvanzado fieldset input[type="button"], .filtroAvanzado fieldset input[type="submit"], .filtroAvanzado fieldset input[type="reset"], .filtroAvanzado fieldset input[type="file"], .filtroAvanzado fieldset button{
+	display: inline-block;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	margin: 0 10px;
+	padding: 0px;
+	vertical-align: middle;
+	background: url('../images/advancedFilter/add3.png') no-repeat left top;
+}
+
+
+.filtroAvanzado #filtroAvanzado-exec-clear {
+	display: inline-block;
+	width: 268px;
+	background: #dfdfdf;
+	border-left: solid 1px #aaa;
+	border-right: solid 1px #aaa;
+}
+
+.filtroAvanzado #filtroAvanzado-exec-clear #executeAdvancedFilter {
+	float: left;
+	margin: 3px 0 0 80px;
+	color: rgb(66, 117, 165);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+	
+.filtroAvanzado #filtroAvanzado-exec-clear #executeAdvancedFilter:hover{
+	color: #666;
+}
+	
+.filtroAvanzado #filtroAvanzado-exec-clear #clearAdvancedFilter {
+	float: right;
+	margin: 3px 5px 0 0;
+	text-decoration: none;
+	font-size: 12px;
+	color: #666;
+}
+
+.filtroAvanzado #filtroAvanzado-exec-clear #clearAdvancedFilter:hover {
+	color: rgb(66, 117, 165);
+}
+
+.filtroAvanzado #filtroAvanzado-exec-clear label {
+	cursor: auto;
+}
+
+.filtroAvanzado .conditionsContainer {
+	padding: 0;
+	margin: 0;
+	background: #ddd;
+	border: solid 1px #ccc;
+	border-top: 3px solid #2a79a2;
+}
+
+.filtroAvanzado .conditionsContainer div {
+	padding-left: 5px;
+	border-bottom: 1px solid #eee;
+}
+
+.filtroAvanzado .conditionsContainer label {
+	max-width: 205px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 10px;
+	padding-left: 20px;
+	font-size: 13px;
+	color: #666;
+	background: url('../images/advancedFilter/li-icon4.png') no-repeat left top;
+}
+
+.filtroAvanzado .conditionsContainer a {
+	margin: 2px 0 0 0;
+	float: right;
+	width: 20px;
+	height: 20px;
+	background: url('../images/advancedFilter/remove3.png') no-repeat left top;
+	background-position: 2px;
+}

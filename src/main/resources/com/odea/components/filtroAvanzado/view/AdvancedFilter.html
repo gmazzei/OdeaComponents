@@ -1,0 +1,34 @@
+<wicket:head>
+	<link rel="stylesheet" href="odeaComponents/css/filtroAvanzado.css">
+</wicket:head>
+
+<wicket:panel>
+
+	<div id="filtroAvanzado-head">
+		<label wicket:id="findByMessage"></label>
+	</div>
+	
+    <form wicket:id="conditionForm">
+    	<fieldset>
+	        <select wicket:id="field" type="text"></select>
+	        <select wicket:id="operator" type="text"></select>
+	        <input wicket:id="add-link" type="submit"/>
+	        <input wicket:id="value" type="text"/>
+    	</fieldset>
+    </form>
+
+	<!-- TODO: Ver si hay que realizar cambios por el css. 
+	Estaría bueno que el id fuera 'filtroAvanzado-clear' o sacar el div,
+	porque en este cambio se saco el link de 'Ejecutar'-->    
+    <div id="filtroAvanzado-exec-clear">
+	    <a id="clearAdvancedFilter "wicket:id="cleanFilterLink"><label wicket:id="cleanFilterLinkLabel"/></a>
+    </div>
+    
+    <div class="conditionsContainer" wicket:id="conditionsContainer">
+        <div wicket:id="conditionList">
+            <label wicket:id="condition">[CONDITION]</label>
+            <a wicket:id="eraseConditionLink"></a>
+        </div>
+    </div>
+    
+</wicket:panel>
